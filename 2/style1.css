@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+:root {
+    --primaryColor: #6d28d9;
+    --secondaryColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #7c7c7c;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --mainRed: #db2777;
+    --bodyColor: #f6f6f6;
+  }
+  body {
+    color: var(--mainBlack);
+    font-family: "Lato", sans-serif;
+    background-color: var(--bodyColor);
+    position: relative;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+  }
+  .navbar{
+      background-color:var(--secondaryColor);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .navbar-center{
+      max-width: 1170px;
+      width: 100%;
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+  }
+  .menu-icon{
+      color: var(--primaryColor);
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+  }
+  .dropdown-content{
+      display: none;
+      position: absolute;
+      color: var(--mainBlack);
+      z-index: 1;
+      width: 50vh;
+      height: 100vh;
+      line-height: 50px;
+      text-align: center;
+      /* background-color: var(--secondaryColor); */
+      background: rgba( 255, 255, 255, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15.0px );
+-webkit-backdrop-filter: blur( 15.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+  }
+  .sidebar-title{
+      text-align: left;
+      padding-left: 1rem;
+      font-weight: bold;
+      color: var(--mainGrey);
+      border-bottom: 1px solid var(--mainGrey);
+      cursor:auto;
+      
+  }
+  .sidetxt1{
+text-align: left;
+text-justify:auto;
+padding-left: 2.5rem;
+  }
+  #sgvg{
+      font-size: 15px;
+  }
+  .sidetxt2{
+    text-align: left;
+    text-justify:auto;
+    padding-left: 2.5rem;
+  }
+
+#sgvg2{
+    font-size: 15px;
+}
+#sgvg3{
+    font-size: 15px;
+}
+.sidetxt3{
+    text-align: left;
+    text-justify:auto;
+    padding-left: 2.5rem;
+
+}
+  .menu-icon:hover .dropdown-content{
+      display: block;
+  }
+  .nav-title{
+      color: var(--mainBlack);
+  }
+  .cart-btn{
+      color: var(--primaryColor);
+      position: relative;
+      cursor: pointer;
+  }
+  .cart-btn i, .menu-icon i{
+    font-size: 1.5rem;
+}
+.cart-items{
+    position: absolute;
+    background-color: var(--mainRed);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainWhite);
+    font-size: 0.765rem;
+    top:-9px;
+    right: -9px;
+
+}
+
+/* end of navbar */
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    /* background-color: #7c7c7c; */
+}
+.section-title{
+    margin: 2rem 0;
+
+}
+
+
+.products-center{
+    width: 100%;
+    max-width: 1170px;
+    /* background-color: #db2777; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3.5rem;
+    
+
+
+}
+.product{
+    /* background-color: var(--mainWhite); */
+    padding-bottom: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.30 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.0px );
+-webkit-backdrop-filter: blur( 3.0px );
+border-radius: 10px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+.product-img{
+    width: 100%;
+    min-height: 120px;
+    border-radius: 8px 8px 0 0;
+}
+.product-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: bold;
+    /* color: var(--mainGrey); */
+}
+.product-price{
+    text-align: left;
+    padding-left: 1rem;
+    color: var(--mainGrey);
+}
+.product-title{
+    text-align: center;
+    color: #2f4f42;
+    font-family: Arial, Helvetica, sans-serif;
+     text-decoration: none;
+}
+
+.add-to-cart{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px 25px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
